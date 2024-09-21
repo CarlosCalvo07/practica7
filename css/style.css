@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0; 
+}
+body{
+    background-color: #7a7a7a;
+}
+.areaPrincipal {  /*Así se define una clase*/
+    background-image: url("../img/fondo.jpg");  /* agregar fondo de imagen al div*/
+    background-repeat: no-repeat;  /* permitir o no que se repita una imagen*/
+    width: 100%;
+    height: auto;
+    opacity: 0.7;  /* Opacidad de la imagen */
+    -webkit-background-size: 100% 100%;  /* Safari 3.0 */
+    -moz-background-size: 100% 100%;  /* Gecko 1.9.2 (Firefox 3.6) */
+    -o-background-size: 100% 100%;  /* Opera 9.5 */
+    background-size: 100% 100%;  /* Gecko 2.0 (Firefox 4.0) and other CSS3-compliant browsers */
+}
+#encabezado{
+    background: #d0e6f8;
+    height: 240px;
+    text-align: center;
+    background-image: url("../img/logo.jpg");
+    background-repeat: no-repeat;
+    background-size: 180px 180px;
+}
+.piePagina{
+    width: 100%;
+    height:100px;
+    background: #15101b;
+    color: white;
+    bottom: 0;
+    position: fixed;
+    left: 0;
+}
+#menu{
+    height: 40px;
+    position: relative;
+    top: 200px;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+}
+
+li{
+    float: left;
+}
+
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+}
+
+li a:hover{
+    background-color: #111111;
+}
+#datos{
+    width: 80%;
+    background-color: #88e94f;
+    height: 600px;
+    margin: auto;
+    opacity: 1;
+    color: #2a3e55;
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.catalogo {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.producto {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.producto img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.producto h2 {
+    margin: 10px 0;
+    font-size: 1.5em;
+    color: #2a3e55;
+}
+
+.producto p {
+    font-size: 1em;
+    color: #555;
+}
+/* Mantener la estructura existente */
+#datos {
+    width: 80%;
+    background-color: #88e94f; /* Recuadro verde */
+    height: auto; /* Dejar que el contenedor se ajuste al contenido */
+    margin: auto;
+    opacity: 1;
+    color: #2a3e55;
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden; /* Evitar que los elementos internos se desborden */
+}
+
+/* Galería */
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Ajustar columnas según el ancho */
+    gap: 20px;
+    margin-top: 20px;
+    max-width: 100%; /* Limitar el tamaño de la galería al ancho del contenedor */
+}
+.imagen-galeria img {
+    width: 100%; /* Asegura que la imagen no exceda el contenedor */
+    height: auto; /* Mantener proporciones */
+    transition: transform 0.5s ease;
+    border-radius: 10px;
+}
+
+.imagen-galeria:hover img {
+    transform: scale(1.1); /* Efecto de zoom */
+}
